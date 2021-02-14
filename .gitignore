@@ -5,3 +5,4 @@ initramfs.*
 *.squashfs
 root/
 genimage.tmp/
+img.ext4
