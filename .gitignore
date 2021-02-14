@@ -1,3 +1,7 @@
 *.iso
 kernel
 initramfs.*
+*.img
+*.squashfs
+root/
+genimage.tmp/
