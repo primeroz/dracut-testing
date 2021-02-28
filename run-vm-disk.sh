@@ -14,5 +14,6 @@ qemu-system-x86_64 -no-reboot -nographic  \
   -m 2048 \
   -machine type=pc,accel=kvm \
   -net nic,model=virtio \
+  -display gtk,gl=on \
   $virtfs_share
 
