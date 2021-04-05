@@ -1,0 +1,11 @@
+version: '3'
+
+
+
+tasks:
+  "docker/build":
+    dir: Dockerfiles
+    cmds:
+      - docker build -t local/build-basefs:latest -f Dockerfile.basefs
+      - docker build -t local/build-initramfs:latest -f Dockerfile.initramfs
+      - docker build -t local/build-rootfs:latest -f Dockerfile.rootfs

@@ -2,6 +2,7 @@
 set -x
 
 ADDMODULES="biosdevname dmsquash-live rngd"
+#  /usr/lib/dracut/dracut-install -D /var/tmp/dracut.RsWDbW/initramfs -a umount poweroff reboot halt losetup stat sleep
 REMOVEMODULES="bootchart dash mksh busybox dmraid fcoe fcoe-uefi iscsi btrfs crypt multipath lvm network-manager network-wicked nvdimm cifs lunmask nbd nfs nvmf resume"
 # network and network-legacy ?
 # rootfs-block ?

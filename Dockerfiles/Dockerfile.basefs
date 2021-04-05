@@ -1,0 +1,7 @@
+FROM debian/bullseye-slim@1c4755911d97f463602833877de76e956e03b8a9c47887c61a5b5d6ae9fbdfa0
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN set -e \
+ && apt-get -q update \
+ && apt-get -qqy upgrade

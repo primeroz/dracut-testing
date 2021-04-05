@@ -1,0 +1,10 @@
+FROM local/build-basefs:latest
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN set -e \
+ && apt-get -qqy install \
+    dracut \
+    dracut-squash \
+    dracut-live \
+    linux-image-amd64
