@@ -6,3 +6,6 @@ initramfs.*
 root/
 genimage.tmp/
 img.ext4
+data.ext4
+root.ext4
+AppImages
