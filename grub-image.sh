@@ -30,7 +30,7 @@ rm -rf $TARGETDIR
 mkdir -p $TARGET_DIR/boot/grub
 
 install -D -m 0644 grub-bios.cfg $GRUB2_CFG
-install -D -m 0644 kernel $TARGET_DIR/boot/kernel
+install -D -m 0644 bzImage $TARGET_DIR/boot/bzImage
 install -D -m 0644 initramfs.img.lz4 $TARGET_DIR/boot/initramfs.img.lz4
 install -D -m 0644 rootfs.squashfs $TARGET_DIR/rootfs.squashfs
 mkdir -p $TARGET_DIR/Apps/
