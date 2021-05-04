@@ -30,7 +30,9 @@ rm -rf $TARGETDIR
 mkdir -p $TARGET_DIR/boot/grub
 
 install -D -m 0644 grub-bios.cfg $GRUB2_CFG
+install -D -m 0644 /boot/vmlinuz-linux $TARGET_DIR/boot/vmlinuz
 install -D -m 0644 bzImage $TARGET_DIR/boot/bzImage
+install -D -m 0644 /home/fciocchetti/Work/booster/generator/booster.img $TARGET_DIR/boot/booster.img
 install -D -m 0644 initramfs.img.lz4 $TARGET_DIR/boot/initramfs.img.lz4
 install -D -m 0644 rootfs.squashfs $TARGET_DIR/rootfs.squashfs
 mkdir -p $TARGET_DIR/Apps/

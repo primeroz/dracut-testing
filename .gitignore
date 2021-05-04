@@ -1,6 +1,7 @@
 *.iso
 kernel
 bzImage
+bzImage.*
 initramfs.*
 *.img
 *.squashfs
